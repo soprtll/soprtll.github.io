@@ -12,12 +12,12 @@ and open the template in the editor.
         <link href="MonStyle.css" rel="stylesheet" type="text/css"/>
     </head>
     <body style="background-color:black;">
-        <nav style="background-color: black">
+        <header>
             
             
-            <table class=menu> 
-              <tr>
-                  <td> <input type="checkbox" id="list-item-1" >
+            <ul class=menu> 
+              <li>
+                   <input type="checkbox" id="list-item-1" >
                 <label for="list-item-1" class="first" >Playlists</label>
                 <ul>
                   <li><a href= 'https://open.spotify.com/playlist/37i9dQZF1EIgbjUtLiWmHt'> Rap</a></li>
@@ -26,8 +26,8 @@ and open the template in the editor.
                   <li><a href= 'https://open.spotify.com/genre/0JQ5DAqbMKFBweu2euf3Sj'>Variété française</a></li>
                   <li><a href= 'https://open.spotify.com/search'>Parcourir différentes playlists</a></li>
                 </ul>
-              </td>
-              <td>
+              </li>
+            <li>
                 <input type="checkbox" id="list-item-2">
                 <label for="list-item-2">Mes musiques</label>
                 <ul>
@@ -37,19 +37,20 @@ and open the template in the editor.
                   <li><a href= 'https://open.spotify.com/intl-fr/track/0VjIjW4GlUZAMYd2vXMi3b'> The weeknd : blinding lights</a></li>
                   <li><a href= 'https://open.spotify.com/intl-fr/artist/3bRGJQd7b4lE3ZAEMfOXJp'> Luidji : reste en vie </a></li>
                 </ul>
-              </td>
+            </li>
+              
               
     
-             <td>
+            <li> 
               <input type="checkbox" id="list-item-3">
               <label for="list-item-3" class="last">Favoris</label>
               <ul>
                 <li>Aucun favoris</li>
               </ul>
-            </td>
-           </tr>
-        </table>
-        </nav>
+            
+           </li>
+        </ul>
+        </header>
                 
                 
          
@@ -63,12 +64,12 @@ and open the template in the editor.
             <a href= 'https://open.spotify.com/intl-fr'> <img src="images/Spotify_logo.png" alt="Spotify_logo" style="width:15%"/> </a>
             </p>
         
-      <p> Spotify est un service numérique
+           <p id="monTexte">Spotify est un service numérique
           qui propose de la musique, des podcasts et des vidéos,
           et qui vous offre un accès à des millions de titres et à d'autres contenus 
           de créateurs du monde entier. 
-          Les fonctionnalités de base sont totalement gratuites
-      </p>
+          Les fonctionnalités de base sont totalement gratuites</p>
+     
        
     </body>
 </html>
