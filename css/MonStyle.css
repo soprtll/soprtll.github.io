@@ -27,6 +27,13 @@ and open the template in the editor.
  
 }
 
+#monTexte{
+ color:white;
+ font-size:10pt;
+ font-family: "Arial Black";
+ text-align:center;
+}
+
 
 .menu li {
 
@@ -41,11 +48,8 @@ and open the template in the editor.
 .menu {
 
     display: flex;              /* Transformation en flexbox */
-
     padding:0;                  /* Suppression des marges internes */
-
-    border-radius: 10%;     /* Ajout de la couleur d'arrière-plan */
-
+    background-color: #iy;     /* Ajout de la couleur d'arrière-plan */
     justify-content: center     /* Alignements des liens dans le menu */
 
 }
@@ -55,27 +59,34 @@ and open the template in the editor.
 .menu a {
 
     display:block;                /* Transformation en block */
-
     min-width: 120px;             /* Largeur minimale des liens */   
 
     
-
     margin: 2rem;               /* Marges externes (1 valeurs = 4 directions) */
-
     padding: 0.5rem 0;            /* Marges internes (2 valeurs = haut/bas et gauche/droite)*/
-
     text-align: center;           /* Centrage du texte */   
-
-    background-color:black;    /* Arrière-plan */
-
-    color:#2ECC71 ;                  /* Couleur du texte */
-
+    background-color:#2ECC71;    /* Arrière-plan */
+    color:white ;                  /* Couleur du texte */
     text-decoration: none;        /* Suppression du soulignement */
-
-    border: 1px solid #2ECC71;       /* Ajout d'une bordure */
-
+    border: 1px solid white;       /* Ajout d'une bordure */
     border-radius: 4px;           /* Arrondis des bordures */
+    transition: all 1s ;          /* Ajout des effets de transition */
 
+}
+.menu label {
+
+    display:block;                /* Transformation en block */
+    min-width: 120px;             /* Largeur minimale des liens */   
+
+    
+    margin: 2rem;               /* Marges externes (1 valeurs = 4 directions) */
+    padding: 0.5rem 0;            /* Marges internes (2 valeurs = haut/bas et gauche/droite)*/
+    text-align: center;           /* Centrage du texte */   
+    background-color:#2ECC71;    /* Arrière-plan */
+    color:white ;                  /* Couleur du texte */
+    text-decoration: none;        /* Suppression du soulignement */
+    border: 1px solid white;       /* Ajout d'une bordure */
+    border-radius: 4px;           /* Arrondis des bordures */
     transition: all 1s ;          /* Ajout des effets de transition */
 
 }
@@ -95,55 +106,18 @@ and open the template in the editor.
 }*/
 
 .menu a:hover,
-
 .menu a:hover.actif{
-
   background-color: #2ECC71;
-
-  color: black;
-
-  border-color: black;
-
+  color: white;
+  border-color: white;
+}
+.menu label:hover,
+.menu label:hover.actif{
+  background-color: #2ECC71;
+  color: white;
+  border-color: white;
 }
 
-body{
-  font-family: "Roboto", "Sans Serif";
-  font-size: 18pt;
-  color: #fff;
-  background: black;
-}
-
-.wrapper{
-  margin: 10% auto;
-  width: 400px;
-}
-
-ul{
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-label{
-  display: block;
-  cursor: pointer;
-  padding: 10px;
-  border: 1px solid #fff;
-  border-bottom: none;
-}
-
-label:hover{
-  background: black;
-}
-
-label.last{
-  border-bottom: 1px solid #fff;
-}
-
-ul ul li{
-  padding: 10px;
-  background: black;
-}
 
 
 input[type="checkbox"]{
@@ -164,7 +138,8 @@ input[type="checkbox"]:checked ~ ul{
 }
 
 input[type="checkbox"]:checked + label{
-  background: #000000;
-  border-bottom: 1px solid #fff;
+  background-color: black;
+  color: white;
+  border-color: white;
 }
 
