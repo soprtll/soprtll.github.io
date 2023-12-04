@@ -27,6 +27,85 @@ and open the template in the editor.
  
 }
 
+
+.menu li {
+
+    list-style-type: none ;       /* Suppression des puces */    
+
+}
+
+
+
+
+
+.menu {
+
+    display: flex;              /* Transformation en flexbox */
+
+    padding:0;                  /* Suppression des marges internes */
+
+    border-radius: 10%;     /* Ajout de la couleur d'arrière-plan */
+
+    justify-content: center     /* Alignements des liens dans le menu */
+
+}
+
+
+
+.menu a {
+
+    display:block;                /* Transformation en block */
+
+    min-width: 120px;             /* Largeur minimale des liens */   
+
+    
+
+    margin: 2rem;               /* Marges externes (1 valeurs = 4 directions) */
+
+    padding: 0.5rem 0;            /* Marges internes (2 valeurs = haut/bas et gauche/droite)*/
+
+    text-align: center;           /* Centrage du texte */   
+
+    background-color:black;    /* Arrière-plan */
+
+    color:#2ECC71 ;                  /* Couleur du texte */
+
+    text-decoration: none;        /* Suppression du soulignement */
+
+    border: 1px solid #2ECC71;       /* Ajout d'une bordure */
+
+    border-radius: 4px;           /* Arrondis des bordures */
+
+    transition: all 1s ;          /* Ajout des effets de transition */
+
+}
+
+
+
+
+
+/*.menu a.actif {    
+
+    background-color: #8A8A8A ; 
+
+    color: black ;
+
+    border-color: black ;
+
+}*/
+
+.menu a:hover,
+
+.menu a:hover.actif{
+
+  background-color: #2ECC71;
+
+  color: black;
+
+  border-color: black;
+
+}
+
 body{
   font-family: "Roboto", "Sans Serif";
   font-size: 18pt;
